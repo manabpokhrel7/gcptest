@@ -17,4 +17,10 @@ jobs:
         with:
             project_id: 'project-6a262d86-f7b2-46df-acd'
             workload_identity_provider: 'projects/1002319594061/locations/global/workloadIdentityPools/github/providers/my-repo'
+
+      - name: test Gcloud
+        run: |
+          gcloud auth list
+          gcloud config list
+          gcloud info
       
