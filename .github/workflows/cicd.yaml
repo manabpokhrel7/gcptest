@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+run-name: GCP Deployment
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: ls -ltra
+      
+    
