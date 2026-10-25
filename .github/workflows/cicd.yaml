@@ -20,7 +20,5 @@ jobs:
 
       - name: test Gcloud
         run: |
-          gcloud auth list
-          gcloud config list
-          gcloud info
+          gcloud compute instances list
       
