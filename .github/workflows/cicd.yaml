@@ -20,5 +20,5 @@ jobs:
 
       - name: test Gcloud
         run: |
-          gcloud compute instances list
+          pip install google-api-python-client
       
