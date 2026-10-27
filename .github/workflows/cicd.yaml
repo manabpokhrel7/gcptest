@@ -18,7 +18,11 @@ jobs:
             project_id: ${{ vars.PROJECT_ID }}
             workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
 
-      - name: test Gcloud
+      - name: Install gcp api client
         run: |
-          pip install google-api-python-client
+          pip install -r python/requirements.txt
+
+      - name: Execute python script
+        run: |
+          python python/scripts/test.py
       
