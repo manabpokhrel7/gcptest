@@ -22,4 +22,4 @@ def list_instances() -> Iterable[compute_v1.Instance]:
     for instance in instance_list:
         print(f" - {instance.name} ({instance.machine_type})")
 
-    return instance_list
+    print(instance_list)
