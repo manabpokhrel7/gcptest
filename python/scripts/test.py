@@ -18,7 +18,7 @@ def list_instances() -> Iterable[compute_v1.Instance]:
     instance_client = compute_v1.InstancesClient()
     instance_list = instance_client.list(project="project-6a262d86-f7b2-46df-acd", zone="us-central1-a")
 
-    print(f"Instances found in zone {zone}:")
+    print(f"Instances found in zone")
     for instance in instance_list:
         print(f" - {instance.name} ({instance.machine_type})")
 
